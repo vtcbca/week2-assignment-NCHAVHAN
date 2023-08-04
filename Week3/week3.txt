@@ -1,0 +1,39 @@
+.open student.db
+
+sqlite3>create table stud189(
+   ...> id int primary key,
+   ...> name text
+   ...> );
+
+
+
+sqlite> create table stud_datalis(
+   ...> id int,
+   ...> city text,
+   ...> mo_no int,
+   ...> foreign key (id) references stud189(id)
+   ...> );
+
+sqlite> insert into stud189 values(1,'om');
+sqlite> insert into stud189 values(2,'sai');
+sqlite> insert into stud189 values(3,'ram');
+sqlite> insert into stud189 values(4,'bhavik');
+sqlite> insert into stud189 values(5,'meet');
+sqlite> insert into stud189 values(6,'dev');
+sqlite> insert into stud189 values(7,'deep');
+sqlite> insert into stud189 values(8,'vivek');
+sqlite> insert into stud189 values(9,'param');
+sqlite> insert into stud189 values(10,'neel');
+
+
+sqlite> insert into stud_datalis values(1,'surat',9876543210);
+sqlite> insert into stud_datalis values(2,'bardoli',9054543210);
+sqlite> insert into stud_datalis values(3,'mandvi',7642313210);
+sqlite> insert into stud_datalis values(4,'surat',4554787452);
+sqlite> insert into stud_datalis values(5,'valod',7458087452);
+sqlite> insert into stud_datalis values(6,'baben',7458452002);
+sqlite> insert into stud_datalis values(7,'surat',7485889002);
+sqlite> insert into stud_datalis values(8,'bhuj',9966889002);
+sqlite> insert into stud_datalis values(9,'bardoli',9945125202);
+sqlite> insert into stud_datalis values(10,'surat',7456889002);
+
